@@ -279,7 +279,7 @@ class ProfileDetailsPage extends HookConsumerWidget with PresLogger {
                                 expandedObjects: const ["outbounds"],
                                 onChanged: (value) {
                                   if (value == null) return;
-                                  const encoder = const JsonEncoder.withIndent('  ');
+                                  const encoder = JsonEncoder.withIndent('  ');
 
                                   notifier.setField(configContent: encoder.convert(value));
                                 },

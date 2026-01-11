@@ -125,7 +125,6 @@ class MobileWrapperRoute extends ShellRouteData {
     TypedGoRoute<SettingsRoute>(
       path: "/settings",
       name: SettingsRoute.name,
-      routes: [],
     ),
     TypedGoRoute<LogsOverviewRoute>(
       path: "/logs",

@@ -34,8 +34,7 @@ class IPText extends HookConsumerWidget {
     final t = ref.watch(translationsProvider);
     final isVisible = ref.watch(_showIp);
     final textTheme = Theme.of(context).textTheme;
-    final ipStyle =
-        (constrained ? textTheme.labelMedium : textTheme.labelLarge)?.copyWith(
+    final ipStyle = (constrained ? textTheme.labelMedium : textTheme.labelLarge)?.copyWith(
       fontFamily: FontFamily.emoji,
     );
 
@@ -57,9 +56,7 @@ class IPText extends HookConsumerWidget {
               overflow: TextOverflow.ellipsis,
             ),
             secondChild: Padding(
-              padding: constrained
-                  ? EdgeInsets.zero
-                  : const EdgeInsetsDirectional.only(end: 48),
+              padding: constrained ? EdgeInsets.zero : const EdgeInsetsDirectional.only(end: 48),
               child: Text(
                 obscureIp(ip),
                 semanticsLabel: t.general.hidden,
@@ -68,9 +65,7 @@ class IPText extends HookConsumerWidget {
                 overflow: TextOverflow.ellipsis,
               ),
             ),
-            crossFadeState: isVisible
-                ? CrossFadeState.showFirst
-                : CrossFadeState.showSecond,
+            crossFadeState: isVisible ? CrossFadeState.showFirst : CrossFadeState.showSecond,
             duration: const Duration(milliseconds: 200),
           ),
         ),
@@ -133,7 +128,8 @@ class IPCountryFlag extends HookConsumerWidget {
         padding: const EdgeInsets.all(2),
         child: Center(
           child: CircleFlag(
-              countryCode.toLowerCase() == "ir" ? "ir-shir" : countryCode),
+            countryCode.toLowerCase() == "ir" ? "ir-shir" : countryCode,
+          ),
         ),
       ),
     );

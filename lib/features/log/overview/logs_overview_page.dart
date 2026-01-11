@@ -96,7 +96,7 @@ class LogsOverviewPage extends HookConsumerWidget with PresLogger {
                   SliverPinnedHeader(
                     child: DecoratedBox(
                       decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.background,
+                        color: Theme.of(context).colorScheme.surface,
                       ),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
@@ -122,8 +122,7 @@ class LogsOverviewPage extends HookConsumerWidget with PresLogger {
                                 if (v == null) return;
                                 notifier.filterLevel(v.toNullable());
                               },
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 8),
+                              padding: const EdgeInsets.symmetric(horizontal: 8),
                               borderRadius: BorderRadius.circular(4),
                               items: [
                                 DropdownMenuItem(
@@ -173,31 +172,24 @@ class LogsOverviewPage extends HookConsumerWidget with PresLogger {
                                 children: [
                                   if (log.level != null)
                                     Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text(
                                           log.level!.name.toUpperCase(),
-                                          style: Theme.of(context)
-                                              .textTheme
-                                              .labelMedium
-                                              ?.copyWith(
+                                          style: Theme.of(context).textTheme.labelMedium?.copyWith(
                                                 color: log.level!.color,
                                               ),
                                         ),
                                         if (log.time != null)
                                           Text(
                                             log.time!.toString(),
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .labelSmall,
+                                            style: Theme.of(context).textTheme.labelSmall,
                                           ),
                                       ],
                                     ),
                                   Text(
                                     log.message,
-                                    style:
-                                        Theme.of(context).textTheme.bodySmall,
+                                    style: Theme.of(context).textTheme.bodySmall,
                                   ),
                                 ],
                               ),

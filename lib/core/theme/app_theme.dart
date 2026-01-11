@@ -8,8 +8,7 @@ class AppTheme {
   final String fontFamily;
 
   ThemeData lightTheme(ColorScheme? lightColorScheme) {
-    final ColorScheme scheme = lightColorScheme ??
-        ColorScheme.fromSeed(seedColor: const Color(0xFF293CA0));
+    final ColorScheme scheme = lightColorScheme ?? ColorScheme.fromSeed(seedColor: const Color(0xFF293CA0));
     return ThemeData(
       useMaterial3: true,
       colorScheme: scheme,
@@ -29,8 +28,7 @@ class AppTheme {
     return ThemeData(
       useMaterial3: true,
       colorScheme: scheme,
-      scaffoldBackgroundColor:
-          mode.trueBlack ? Colors.black : scheme.background,
+      scaffoldBackgroundColor: mode.trueBlack ? Colors.black : scheme.surface,
       fontFamily: fontFamily,
       extensions: const <ThemeExtension<dynamic>>{
         ConnectionButtonTheme.light,

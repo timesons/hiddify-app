@@ -25,7 +25,7 @@ class SystemTrayNotifier extends _$SystemTrayNotifier with AppLogger {
   Future<void> build() async {
     if (!PlatformUtils.isDesktop) return;
 
-    final activeProxy = await ref.watch(activeProxyNotifierProvider);
+    final activeProxy = ref.watch(activeProxyNotifierProvider);
     final delay = activeProxy.value?.urlTestDelay ?? 0;
     final newConnectionStatus = delay > 0 && delay < 65000;
     ConnectionStatus connection;
@@ -40,7 +40,7 @@ class SystemTrayNotifier extends _$SystemTrayNotifier with AppLogger {
 
     var tooltip = Constants.appName;
     final serviceMode = ref.watch(ConfigOptions.serviceMode);
-    if (connection == Disconnected()) {
+    if (connection == const Disconnected()) {
       setIcon(connection);
     } else if (newConnectionStatus) {
       setIcon(const Connected());
@@ -172,7 +172,7 @@ class SystemTrayNotifier extends _$SystemTrayNotifier with AppLogger {
           }
       }
     }
-    final isDarkMode = false;
+    const isDarkMode = false;
     switch (status) {
       case Connected():
         return Assets.images.trayIconConnectedPng.path;

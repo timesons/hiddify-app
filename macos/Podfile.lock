@@ -21,11 +21,11 @@ PODS:
     - FlutterMacOS
   - screen_retriever (0.0.1):
     - FlutterMacOS
-  - Sentry/HybridSDK (8.25.0)
-  - sentry_flutter (7.20.2):
+  - Sentry/HybridSDK (8.56.2)
+  - sentry_flutter (9.9.2):
     - Flutter
     - FlutterMacOS
-    - Sentry/HybridSDK (= 8.25.0)
+    - Sentry/HybridSDK (= 8.56.2)
   - share_plus (0.0.1):
     - FlutterMacOS
   - shared_preferences_foundation (0.0.1):
@@ -120,27 +120,27 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral/.symlinks/plugins/window_manager/macos
 
 SPEC CHECKSUMS:
-  cupertino_http: 1d506209e339211efa0764caa7b2de4bc55b6818
-  device_info_plus: 5401765fde0b8d062a2f8eb65510fb17e77cf07f
-  dynamic_color: 2eaa27267de1ca20d879fbd6e01259773fb1670f
-  flutter_timezone: 6b906d1740654acb16e50b639835628fea851037
+  cupertino_http: 3ee15e7bdc38bad95624c5a7a2b09015ca6fff07
+  device_info_plus: b0fafc687fb901e2af612763340f1b0d4352f8e5
+  dynamic_color: b820c000cc68df65e7ba7ff177cb98404ce56651
+  flutter_timezone: bed4b9a391e5727a612e722d7f518882c5da205d
   FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
-  in_app_review: a850789fad746e89bce03d4aeee8078b45a53fd0
-  mobile_scanner: 1efac1e53c294b24e3bb55bcc7f4deee0233a86b
-  package_info_plus: 02d7a575e80f194102bef286361c6c326e4c29ce
-  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
-  protocol_handler_macos: d10a6c01d6373389ffd2278013ab4c47ed6d6daa
-  screen_retriever: 59634572a57080243dd1bf715e55b6c54f241a38
-  Sentry: cd86fc55628f5b7c572cabe66cc8f95a9d2f165a
-  sentry_flutter: 0cf2507eb90ff7a6aa3304e900dd7f08edbbefdf
-  share_plus: 76dd39142738f7a68dd57b05093b5e8193f220f7
-  shared_preferences_foundation: fcdcbc04712aee1108ac7fda236f363274528f78
+  in_app_review: ffac7b4a0a71cdaecb1383807e7a8244b09e6d93
+  mobile_scanner: 32c6a15a92430c29e82c619e0185a8a34582dff1
+  package_info_plus: 122abb51244f66eead59ce7c9c200d6b53111779
+  path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
+  protocol_handler_macos: f9cd7b13bcaf6b0425f7410cbe52376cb843a936
+  screen_retriever: 4f97c103641aab8ce183fa5af3b87029df167936
+  Sentry: b53951377b78e21a734f5dc8318e333dbfc682d7
+  sentry_flutter: 5738b8324c46ffa43e5b68da4bbbf68803c2718d
+  share_plus: 3c787998077d6b31e839225a282e9e27edf99274
+  shared_preferences_foundation: 9e1978ff2562383bd5676f64ec4e9aa8fa06a6f7
   sqlite3: 292c3e1bfe89f64e51ea7fc7dab9182a017c8630
-  sqlite3_flutter_libs: 5ca46c1a04eddfbeeb5b16566164aa7ad1616e7b
-  tray_manager: 9064e219c56d75c476e46b9a21182087930baf90
-  url_launcher_macos: 5f437abeda8c85500ceb03f5c1938a8c5a705399
-  window_manager: 3a1844359a6295ab1e47659b1a777e36773cd6e8
+  sqlite3_flutter_libs: 03311aede9d32fb2d24e32bebb8cd01c3b2e6239
+  tray_manager: a104b5c81b578d83f3c3d0f40a997c8b10810166
+  url_launcher_macos: de10e46d8d8b9e3a7b8a133e8de92b104379f05e
+  window_manager: 1d01fa7ac65a6e6f83b965471b1a7fdd3f06166c
 
 PODFILE CHECKSUM: a18d1ba050af210055cfb0cee8d759913f9ff3e3
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

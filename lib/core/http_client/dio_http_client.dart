@@ -14,7 +14,7 @@ class DioHttpClient with InfraLogger {
     required String userAgent,
     required bool debug,
   }) {
-    for (var mode in ["proxy", "direct", "both"]) {
+    for (final mode in ["proxy", "direct", "both"]) {
       _dio[mode] = Dio(
         BaseOptions(
           connectTimeout: timeout,
@@ -31,7 +31,7 @@ class DioHttpClient with InfraLogger {
                 if (mode != "proxy") ...[
                   const Duration(seconds: 2),
                   const Duration(seconds: 3),
-                ]
+                ],
               ],
             ),
           );

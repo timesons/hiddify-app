@@ -1,4 +1,3 @@
-import 'package:dartx/dartx.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:hiddify/singbox/model/singbox_proxy_type.dart';
 
